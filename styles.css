@@ -24,10 +24,16 @@ html, body {
   height: 100%;
   padding: 10px;
 
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
 
-  background-image: url("assets/outer-frame-bg.png");
+  background-image: url("assets/pruple\ bg.webp");
+   background-color: rgba(255, 255, 255, 0.226); /* White overlay with 40% opacity */
+  background-blend-mode: lighten; /* Blends the color and image */
+  /* Other background properties as needed */
+  background-size: cover;
+  width: 100%;
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: calc(100% - 6px) calc(100% - 6px); 
@@ -45,7 +51,7 @@ html, body {
   height: 100%;
 
   
-  border-radius: 0;
+  border-radius: 25px;
 
   display: flex;
   flex-direction: column;
@@ -73,7 +79,7 @@ select {
 
   border-radius: 6.25rem;
   border: 2px solid #C079FF;
-  background: rgba(210, 164, 255, 0.40);
+  background: rgba(206, 157, 255, 0.705);
 
   color: #FFF;
   text-align: center;
@@ -86,6 +92,7 @@ select {
 }
 
 #calendar { 
+  z-index: 1000;
   display: flex;
   width: 11.25rem;
   height: 10.0625rem;
