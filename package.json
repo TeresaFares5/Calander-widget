@@ -1,0 +1,31 @@
+{
+  "name": "little-calendar",
+  "productName": "Little Calendar",
+  "version": "1.0.0",
+  "description": "A minimal Electron calendar app",
+  "main": "main.js",
+  "scripts": {
+  "start": "electron .",
+  "pack": "electron-builder --dir",
+  "dist": "electron-builder"
+},  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^26.4.0"
+  },
+   "build": {
+  "appId": "com.teresa.littlecalendar",
+  "productName": "Little Calendar",
+  "win": {
+    "target": [
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ]
+  },
+  "directories": {
+    "output": "dist"
+  }
+}
+
+}
